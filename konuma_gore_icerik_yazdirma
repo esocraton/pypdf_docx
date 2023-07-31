@@ -1,5 +1,5 @@
 from pypdf import PdfReader
-# pypdf API'ndan PdfReader modülünü aktarıyoruz
+# pypdf kütüphanesinden PdfReader modülünü aktarıyoruz
 
 reader = PdfReader("GeoBase_NHNC1_Data_Model_UML_EN.pdf")
 page = reader.pages[3]
