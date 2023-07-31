@@ -1,3 +1,4 @@
+# pdf dosyanızın tek bir sayfa sayısını giriyorsunuz program sonraki 10 sayfada da işlem yapıyor (0 tabanlı indexlemeyle)
 import os
 import time
 from docx import Document
