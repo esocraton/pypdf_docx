@@ -1,12 +1,13 @@
 from pypdf import PdfReader
-# pypdf kütüphanesinden PdfReader modülünü aktarıyoruz
+# pypdf API'ndan PdfReader modülünü aktarıyoruz
 
 reader = PdfReader("GeoBase_NHNC1_Data_Model_UML_EN.pdf")
 page = reader.pages[3]
 
 parts = []
-# hangi bölümleri seçeceğimizi tanımlıyoruz
+# daha sonra kullanılmak üzere verilerin depolanacağı boş bir liste oluşturuyoruz
 def visitor_body(text, cm, tm, font_dict, font_size):
+# hangi bölümleri seçeceğimizi tanımlıyoruz
     y = tm[5]
     # almak istediğimiz verinin bulunduğu sayfanın dikey eksenindeki konumunu girdik
     if y > 50 and y < 720:
