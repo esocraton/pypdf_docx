@@ -1,3 +1,3 @@
 # pypdf
-pypdf api notları
+pypdf API notları
 pypdf kütüphanesini kurcalarken bulduğum bazı şeyler...
